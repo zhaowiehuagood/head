@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>今日头条</title>
+    <link rel="stylesheet" href="../web/assets/index/css/rem.css">
+    <link rel="stylesheet" href="../web/assets/index/css/index.css">
+    <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../web/assets/index/js/index.js"></script>
+</head> 
+<body>
+<div class="window"></div>
+<div class="tob">
+    <div class="con-i"></div>
+    <div class="con-m">
+        <div class="con-m1"></div>
+        <div class="con-m2"></div>
+    </div>
+    <a href="../views/index/search.html">
+        <div class="con-g">
+            <div class="con-img"></div>
+        </div>
+    </a>
+    
+</div>
+<div class="top_menu_more">
+    <div class="list_shadow"></div>
+    <a class="more_btn" href="../views/index/category.html">
+        <span class="cross">+</span>
+    </a>
+</div>
+<div class="tob-one">
+
+    <div class="top_menu_list">
+
+            <ul class="con-word">
+                <a href="index.php?x=0">
+                    <li class="word">推荐</li>
+                </a>
+                <a href="index.php?x=1">
+                    <li class="word">视频</li>
+                </a>
+                <a href="index.php?x=2">
+                    <li class="word">热点</li>
+                </a>
+                <a href="index.php?x=3">
+                    <li class="word">社会</li>
+                </a>
+                <a href="">
+                    <li class="word">娱乐</li>
+                </a>
+                <a href="">
+                    <li class="word">军事</li>
+                </a>
+                <a href="">
+                    <li class="word">科技</li>
+                </a>
+                <a href="">
+                    <li class="word">汽车</li>
+                </a>
+                <a href="">
+                    <li class="word">体育</li>
+                </a>
+                <a href="">
+                    <li class="word">财经</li>
+                </a>
+                <a href="">
+                    <li class="word">国际</li>
+                </a>
+                <a href="">
+                    <li class="word">时尚</li>
+                </a>
+            </ul>
+    </div>
+</div>
+<div class="box">
+    <ul class="ul">
+        <?php foreach($rows as $k => $v){ ?>
+        <li class="con">
+            <div class="item_detail">
+                <h3><?php echo $v['title']?></h3>
+                <div class="item_info">
+                    <span class="stick">置顶</span>
+                    <span class="stick-one">中央新闻网</span>
+                    <span class="stick-two">评论 52</span>
+                </div>
+            </div>
+        </li>
+        <?php }?>
+    </ul>
+</div>
+<div class="popup">
+    <div class="banner"></div>
+    <p>已加载好您感兴趣的头条</p>
+    <div class="download-btn">立即打开</div>
+    <div class="close">
+        <span>×</span>
+    </div>
+    <audio src="http://fs.w.kugou.com/201809062109/5d003b3fdcba223a7b38d905f2ca41c4/G010/M09/03/01/qoYBAFUPG0yAEn5uADe4fenj2d4334.mp3"></audio>
+</div>
+</body>
+</html>
